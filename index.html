@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>新能源企业新媒体传播策略研究 · 王若琛</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231e3a5f'/%3E%3Ctext x='32' y='44' font-size='32' text-anchor='middle' fill='white' font-family='sans-serif'%3E新%3C/text%3E%3C/svg%3E">
+<link href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Noto+Serif+SC:wght@600;900&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: "Noto Sans SC", -apple-system, sans-serif;
+  background: #f7f6f3;
+  color: #1a1a1a;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+.container { max-width: 860px; margin: 0 auto; padding: 0 32px; }
+
+.hero { padding: 100px 0 80px; border-bottom: 1px solid #e5e2dc; }
+.hero .eyebrow { font-size: 12px; letter-spacing: 3px; color: #9a9a9a; text-transform: uppercase; margin-bottom: 24px; }
+.hero h1 { font-family: "Noto Serif SC", serif; font-size: 48px; font-weight: 900; line-height: 1.25; letter-spacing: -1px; margin-bottom: 20px; }
+.hero h1 em { font-style: normal; color: #1e3a5f; }
+.hero .lead { font-size: 17px; color: #5a5a5a; max-width: 640px; margin-bottom: 40px; }
+.hero .meta { display: flex; gap: 32px; flex-wrap: wrap; font-size: 13px; color: #9a9a9a; }
+
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); padding: 56px 0; border-bottom: 1px solid #e5e2dc; }
+.stat { padding: 0 20px; border-left: 1px solid #e5e2dc; }
+.stat:first-child { border-left: none; padding-left: 0; }
+.stat .num { font-size: 52px; font-weight: 900; line-height: 1; letter-spacing: -2px; }
+.stat .num span { font-size: 22px; font-weight: 500; color: #999; }
+.stat .label { font-size: 13px; color: #7a7a7a; margin-top: 8px; }
+
+section { padding: 72px 0; border-bottom: 1px solid #e5e2dc; }
+.section-num { font-size: 12px; color: #c0c0c0; letter-spacing: 2px; margin-bottom: 8px; }
+section h2 { font-family: "Noto Serif SC", serif; font-size: 32px; font-weight: 700; margin-bottom: 12px; letter-spacing: -0.5px; }
+section h3 { font-size: 18px; margin: 32px 0 16px; color: #1e3a5f; }
+section .lead { font-size: 15px; color: #6a6a6a; margin-bottom: 40px; max-width: 640px; }
+section p { font-size: 15px; color: #3a3a3a; margin-bottom: 16px; }
+
+.tbl-wrap { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th { background: #1e3a5f; color: white; font-weight: 500; text-align: left; padding: 14px 16px; font-size: 13px; }
+td { padding: 12px 16px; border-bottom: 1px solid #f0ede8; vertical-align: top; }
+tr:last-child td { border-bottom: none; }
+tr:nth-child(even) { background: #faf9f6; }
+
+.cards { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 24px; }
+.card { background: white; border-radius: 10px; padding: 28px; border-top: 3px solid #1e3a5f; }
+.card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+.card .big { font-size: 32px; font-weight: 900; color: #1e3a5f; margin: 8px 0; line-height: 1.2; }
+.card .big span { font-size: 16px; font-weight: 400; color: #999; }
+.card p { font-size: 14px; color: #6a6a6a; }
+
+.callout { background: #eef3f8; border-left: 4px solid #1e3a5f; padding: 20px 24px; border-radius: 0 8px 8px 0; margin: 24px 0; font-size: 15px; color: #2a3a4a; }
+
+.sample { background: white; border-radius: 10px; padding: 32px; margin-bottom: 24px; }
+.sample h3 { font-size: 18px; margin-bottom: 16px; color: #1e3a5f; }
+.sample p { font-size: 14px; color: #3a3a3a; margin-bottom: 12px; }
+.sample ul, .sample ol { padding-left: 20px; font-size: 14px; color: #3a3a3a; margin-bottom: 12px; }
+
+.method-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 24px; }
+.method-card { background: white; border-radius: 10px; padding: 24px; }
+.method-card h4 { font-size: 15px; font-weight: 700; color: #1e3a5f; margin-bottom: 10px; }
+.method-card p { font-size: 13px; color: #6a6a6a; line-height: 1.7; margin: 0; }
+
+footer { padding: 60px 0; text-align: center; font-size: 13px; color: #aaa; }
+footer .name { font-size: 15px; color: #666; margin-bottom: 4px; }
+
+@media (max-width: 768px) {
+  .stats { grid-template-columns: repeat(2, 1fr); gap: 24px 0; }
+  .cards, .method-grid { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 32px; }
+  section h2 { font-size: 24px; }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<!-- Hero -->
+<div class="hero">
+  <div class="eyebrow">RESEARCH PROJECT · 2026.10</div>
+  <h1>新能源企业新媒体传播<br><em>策略研究与方案设计</em></h1>
+  <p class="lead">以西安禾和能源科技有限公司为目标企业，基于 25+ 家产业链头部账号的 96 条真实公开内容，采用内容分析法与量化对比法，拆解行业内容生态、验证互动规律，输出可落地的新媒体运营全案。</p>
+  <div class="meta">
+    <span>目标企业：西安禾和能源（新能源零部件热处理）</span>
+    <span>调研周期：2026.07–10</span>
+    <span>研究者：王若琛</span>
+  </div>
+</div>
+
+<!-- 数字条 -->
+<div class="stats">
+  <div class="stat"><div class="num">96</div><div class="label">真实样本（条）</div></div>
+  <div class="stat"><div class="num">25<span>+</span></div><div class="label">覆盖企业（家）</div></div>
+  <div class="stat"><div class="num">83</div><div class="label">公众号/官网样本</div></div>
+  <div class="stat"><div class="num">13</div><div class="label">抖音实测数据</div></div>
+</div>
+
+<!-- 01 研究方法 -->
+<section>
+  <div class="section-num">01 / METHODOLOGY</div>
+  <h2>研究方法</h2>
+  <p class="lead">本研究采用定量与定性结合的混合研究方法，确保结论可追溯、可验证。</p>
+
+  <div class="method-grid">
+    <div class="method-card">
+      <h4>① 分层抽样法</h4>
+      <p>按产业链层级（电池/光伏/储能/风电/零部件/西安本地）分层选取 25+ 家企业，每层选取头部 2-3 家 + 区域同行，避免样本偏差。</p>
+    </div>
+    <div class="method-card">
+      <h4>② 内容分析法</h4>
+      <p>对 83 条公众号/官网公开内容逐条编码，按"选题类型"（企业动态/案例/产品/技术科普/行业观点）归类，计算各类型占比。</p>
+    </div>
+    <div class="method-card">
+      <h4>③ 量化对比法</h4>
+      <p>对 13 条抖音公开视频，逐条采集点赞/评论/收藏/转发四项互动指标，按内容类型分组对比，验证"哪类内容有真实互动"。</p>
+    </div>
+    <div class="method-card">
+      <h4>④ 案例对标法</h4>
+      <p>选取比亚迪（B+C标杆）、宁德时代（天花板）、陕鼓动力（西安本地同行）三个典型案例深入分析，提炼可迁移经验。</p>
+    </div>
+  </div>
+
+  <h3>数据采集流程</h3>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th style="width:20%">步骤</th><th>方法</th><th style="width:30%">产出</th></tr>
+      <tr><td>Step 1 样本选取</td><td>产业链分层 + 西安本地对标</td><td>25+ 家企业名单</td></tr>
+      <tr><td>Step 2 内容采集</td><td>企业官网新闻页 + 公众号历史 + 抖音公开页</td><td>96 条样本（标题/日期/链接）</td></tr>
+      <tr><td>Step 3 编码归类</td><td>逐条标注选题类型/内容形式/发布频率</td><td>选题占比表</td></tr>
+      <tr><td>Step 4 量化分析</td><td>13 条抖音视频互动数据分组对比</td><td>4 条硬结论</td></tr>
+      <tr><td>Step 5 方案输出</td><td>对标禾和业务定位，设计栏目矩阵与日历</td><td>运营全案 + 样稿</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- 02 调研对象 -->
+<section>
+  <div class="section-num">02 / SAMPLE</div>
+  <h2>调研对象分层</h2>
+  <p class="lead">覆盖电池、光伏组件、储能逆变器、风电整机、零部件材料全产业链。</p>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th style="width:20%">层级</th><th>企业</th><th style="width:30%">选取理由</th></tr>
+      <tr><td>头部电池</td><td>宁德时代、比亚迪、亿纬锂能、国轩高科、欣旺达、蜂巢能源、中创新航</td><td>B端零部件品牌天花板</td></tr>
+      <tr><td>光伏组件</td><td>隆基绿能、晶科能源、天合光能、晶澳科技、阿特斯、通威股份、东方日升</td><td>技术科普做得最多</td></tr>
+      <tr><td>储能/逆变器</td><td>阳光电源、上能电气、海博思创、华宝新能、固德威、锦浪科技、德业股份</td><td>To B 装备，禾和直接对标</td></tr>
+      <tr><td>风电整机</td><td>金风科技、明阳智能、远景能源、运达股份、三一重能</td><td>重型装备传播参考</td></tr>
+      <tr><td>西安本地</td><td>隆基、陕鼓动力、特变西安、奇点能源、西部超导、中车时代电气</td><td>同区域工业制造竞品</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- 03 选题结构分析 -->
+<section>
+  <div class="section-num">03 / CONTENT ANALYSIS</div>
+  <h2>行业账号在发什么</h2>
+  <p class="lead">83 条公众号/官网样本按选题类型归类后的占比分布。</p>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>选题类型</th><th>数量</th><th>占比</th><th>典型标题</th></tr>
+      <tr><td>企业动态（合作/荣誉/展会/会议）</td><td>42</td><td><strong>50.6%</strong></td><td>"国轩高科位列全球新能源500强第53位"</td></tr>
+      <tr><td>案例/项目（投产/订单/并网）</td><td>21</td><td>25.3%</td><td>"晶科储能新签德国220MWh混合储能项目"</td></tr>
+      <tr><td>产品发布</td><td>12</td><td>14.5%</td><td>"欣旺达发布15C闪充电池系统"</td></tr>
+      <tr><td>技术科普</td><td>7</td><td><strong>8.4%</strong></td><td>"西部超导研制出钛合金TC21成分标准样品"</td></tr>
+      <tr><td>行业观点/政策</td><td>5</td><td><strong>6.0%</strong></td><td>"新型电池产业十五五规划发布"</td></tr>
+    </table>
+  </div>
+  <div class="callout">
+    <strong>分析结论：</strong>通稿占 50.6% 但 B 端客户决策价值最低；技术科普仅 8.4%，是最大内容洼地；行业观点仅 6.0% 但被财经媒体二次报道最多——供给最少、传播最广，这就是中型零部件企业的机会窗口。
+  </div>
+</section>
+
+<!-- 04 抖音互动数据分析 -->
+<section>
+  <div class="section-num">04 / ENGAGEMENT DATA</div>
+  <h2>什么内容真正有人看</h2>
+  <p class="lead">13 条抖音公开视频的真实点赞/评论/收藏/转发数据，按内容类型分组对比。</p>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>企业</th><th>内容类型</th><th>赞</th><th>评</th><th>藏</th><th>转</th></tr>
+      <tr><td>阳光电源</td><td>产品硬广</td><td>38</td><td>1</td><td>2</td><td>3</td></tr>
+      <tr><td>阳光电源</td><td>项目订单（波兰1GWh）</td><td>95</td><td>19</td><td>16</td><td>35</td></tr>
+      <tr><td>隆基绿能</td><td>领导通稿</td><td>145</td><td>19</td><td>13</td><td>2</td></tr>
+      <tr><td>比亚迪</td><td>品牌故事（海外网约车）</td><td>375</td><td>22</td><td>4</td><td>7</td></tr>
+      <tr><td>明阳智能</td><td>项目中标（470MW）</td><td>115</td><td>10</td><td>11</td><td>10</td></tr>
+      <tr><td>明阳智能</td><td>人物访谈</td><td>73</td><td>0</td><td>15</td><td>0</td></tr>
+      <tr><td>上能电气（第三方探厂）</td><td>工厂探秘</td><td>203</td><td>26</td><td>18</td><td>29</td></tr>
+      <tr><td>第三方财经号</td><td>金风vs明阳对比</td><td>215</td><td>34</td><td><strong>122</strong></td><td><strong>65</strong></td></tr>
+      <tr><td>第三方财经号</td><td>行业事件（江帆石投运）</td><td>84</td><td>2</td><td>29</td><td>16</td></tr>
+      <tr><td>宁德时代（第三方）</td><td>深度探厂（晚点LatePost）</td><td><strong>6645</strong></td><td><strong>175</strong></td><td><strong>2136</strong></td><td><strong>1098</strong></td></tr>
+    </table>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <h3>官方号在"自娱自乐"</h3>
+      <div class="big">20–145 赞</div>
+      <p>纯产品硬广和人物访谈最低，B端客户不买账。</p>
+    </div>
+    <div class="card">
+      <h3>带数字比讲故事有效</h3>
+      <div class="big">+57%</div>
+      <p>"470MW中标"（115赞）比"副总讲故事"（73赞）高57%。</p>
+    </div>
+    <div class="card">
+      <h3>第三方收藏是官方10倍</h3>
+      <div class="big">122藏 / 65转</div>
+      <p>B端客户会把干货对比转给同事，官方通稿没人转。</p>
+    </div>
+    <div class="card">
+      <h3>深度探厂能破圈</h3>
+      <div class="big">×160</div>
+      <p>第三方探厂（6645赞）比官方硬广（41赞）高160倍。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 05 运营方案 -->
+<section>
+  <div class="section-num">05 / STRATEGY</div>
+  <h2>禾和能源运营方案</h2>
+  <p class="lead">基于以上数据结论，为禾和能源设计的可落地新媒体全案。</p>
+
+  <h3>账号定位</h3>
+  <div class="callout">"新能源零部件背后的工艺专家"——不做通稿，做客户真正需要的工艺内容。</div>
+
+  <h3>栏目矩阵</h3>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>栏目</th><th>类型</th><th>配比</th><th>频率</th><th>数据依据</th></tr>
+      <tr><td>《工艺笔记》</td><td>技术/工艺科普</td><td><strong>40%</strong></td><td>周更1篇+1条短视频</td><td>行业仅8.4%，最大洼地</td></tr>
+      <tr><td>《政策速读》</td><td>行业政策解读</td><td>25%</td><td>跟热点，48h内出</td><td>行业仅6%但外溢最大</td></tr>
+      <tr><td>《禾和智造现场》</td><td>车间/案例实拍</td><td>25%</td><td>双周1篇</td><td>探厂视频比硬广高5-160倍</td></tr>
+      <tr><td>《禾和二三事》</td><td>企业动态/团队</td><td>10%</td><td>月更1-2篇</td><td>通稿占50%已饱和，减量</td></tr>
+    </table>
+  </div>
+
+  <h3>三阶段 KPI 体系</h3>
+  <div class="tbl-wrap">
+    <table>
+      <tr><th>阶段</th><th>目标</th><th>关键指标</th></tr>
+      <tr><td>第1个月</td><td>跑通节奏</td><td>稳定周更4条，建立打开率/完播率基线</td></tr>
+      <tr><td>第2个月</td><td>提质</td><td>互动率环比+20%，A/B测试结论≥2条</td></tr>
+      <tr><td>第3个月</td><td>见增量</td><td>粉丝+15%，单篇打开峰值≥10%，B端询盘≥5条/月</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- 06 内容样稿 -->
+<section>
+  <div class="section-num">06 / SAMPLES</div>
+  <h2>3 篇内容样稿</h2>
+  <p class="lead">按方案标准产出，覆盖公众号长文和小红书双平台差异化。</p>
+
+  <div class="sample">
+    <h3>公众号长文：《氮化处理到底在处理什么？3张图讲透》</h3>
+    <p>氮化处理的作用深度通常只有 0.1~0.5 毫米——也就是一根头发丝直径的 1~5 倍。但恰恰是这一薄层，决定了三个关键性能：表面硬度从 HRC20 拉到 HV800~1200、耐磨性提高 3~5 倍、抗疲劳寿命提高 30%~200%。</p>
+    <p><strong>一句话：氮化不是把零件变硬，是给零件"穿了一层耐磨盔甲"。</strong></p>
+    <p>文章用 3 张对比表讲清气体氮化 vs 离子氮化的差异、温度/时间/变形量、以及最容易出问题的 3 个环节（温度不均、氨气流量不稳、出炉冷却速度）。</p>
+  </div>
+
+  <div class="sample">
+    <h3>小红书笔记：《氮化 vs 调质 一张表分清》</h3>
+    <p><strong>氮化 = 给零件穿"耐磨盔甲"</strong>：深度0.1~0.5mm（很薄但很硬）｜耐磨+抗疲劳｜用在齿轮、轴、模具</p>
+    <p><strong>调质 = 给零件"整体调脾气"</strong>：深度整个截面｜强韧性匹配｜淬火+高温回火｜用在结构件、连杆、螺栓</p>
+    <p>举例：新能源汽车电机轴——轴整体要调质（抗冲击不断），轴承位要氮化（耐磨不拉伤）。一根零件两种工艺，这才是热处理的精髓。</p>
+  </div>
+
+  <div class="sample">
+    <h3>小红书笔记：《车间实拍｜氮化炉温度怎么控在±5℃》</h3>
+    <p>我们禾和的氮化炉，每炉装料前要做：放9个测温点→预热2小时看温差→温差超±5℃就调整装炉位置→正式生产每5分钟自动记录一次。</p>
+    <p>为什么这么轴？同一炉零件：温度差10℃，表面硬度差200HV；时间差1小时，氮化层深度差0.1mm；装车跑10万公里，寿命差2倍。这不是较真，是对客户零件负责。</p>
+  </div>
+</section>
+
+<!-- 07 总结 -->
+<section>
+  <div class="section-num">07 / SUMMARY</div>
+  <h2>项目总结</h2>
+  <p class="lead">从数据采集到方案输出的完整闭环。</p>
+  <div class="callout">
+    <strong>核心结论：</strong>新能源 To B 企业的新媒体普遍存在"通稿多、干货少、官方号自娱自乐"三大问题。对于禾和这样的中型零部件企业，最大的机会不是跟头部比预算，而是做行业里没人做的事——用真工艺、真设备、真参数做技术科普，用车间实拍建立 B 端信任。
+  </div>
+  <div class="cards">
+    <div class="card">
+      <h3>数据采集</h3>
+      <p>96 条真实样本、25+ 家企业、5 大产业链分层，每条都有标题、日期、来源链接可追溯。</p>
+    </div>
+    <div class="card">
+      <h3>分析方法</h3>
+      <p>内容分析法（选题归类占比）+ 量化对比法（13 条抖音互动数据分组）+ 案例对标法（3 个典型企业）。</p>
+    </div>
+    <div class="card">
+      <h3>方案输出</h3>
+      <p>账号定位、4 栏目矩阵、30 天 22 条选题日历、三阶段 KPI 体系、3 篇样稿，可直接执行。</p>
+    </div>
+    <div class="card">
+      <h3>可迁移性</h3>
+      <p>这套"分层抽样→内容编码→互动验证→方案输出"的方法论，可直接迁移到任何 To B 制造企业的新媒体调研。</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="name">王若琛 · 西安交通大学城市学院</div>
+  <div>新能源行业企业新媒体传播策略研究 · 2026.10</div>
+</footer>
+
+</div>
+</body>
+</html>
